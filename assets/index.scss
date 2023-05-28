@@ -1,3 +1,5 @@
+@import "styles/header";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,7 @@
 
 .container {
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   margin: 0 auto;
 
   @media only screen and (min-width: 600px) {
@@ -25,7 +27,7 @@
   bottom: 0;
   width: 100vw;
   right: -100vw;
-  transition: ease .4s;
+  transition: ease .3s;
   font-size: 1.5rem;
 
   .mobile-menu-header {
@@ -60,44 +62,7 @@ nav {
 
       a {
         text-decoration: none;
-        color: #000000;
       }
-    }
-  }
-}
-
-header {
-  .logo {
-    text-transform: uppercase;
-  }
-
-  .menu-button {
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.8rem 0;
-  }
-
-  nav ul {
-    display: none;
-
-    li {
-      margin-left: 1rem;
-    }
-  }
-
-  @media only screen and (min-width: 600px) {
-    .header-container {
-      border-bottom: 3px solid #000000;
-    }
-
-    nav {
-      display: flex;
     }
   }
 }
@@ -108,4 +73,8 @@ header {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 1rem;
+}
+
+.section-background {
+  background-image: url(images/bg.png);
 }
