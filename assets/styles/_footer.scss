@@ -1,0 +1,17 @@
+footer {
+  background-image: url(images/bg.png);
+  color: white;
+  padding: 0.9rem 0;
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1rem;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
