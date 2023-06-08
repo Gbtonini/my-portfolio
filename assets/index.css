@@ -1,3 +1,28 @@
+footer {
+  background-image: url(images/bg.png);
+  color: white;
+  padding: 0.9rem 0;
+  margin-top: 1.5rem;
+  font-size: 0.6rem;
+}
+@media only screen and (min-width: 600px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,29 +125,53 @@ header.section-background .header-container {
             transform: translateY(0);
   }
 }
-footer {
-  background-image: url(images/bg.png);
-  color: white;
-  padding: 0.9rem 0;
-  margin-top: 1.5rem;
-  font-size: 0.6rem;
-}
-@media only screen and (min-width: 600px) {
-  footer {
-    font-size: 1rem;
-  }
-}
-
-.footer-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.page-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+.page-title img {
+  font-size: 1.25rem;
+  margin-right: 0.3rem;
+}
+@media only screen and (min-width: 600px) {
+  .page-title {
+    font-size: 1.25rem;
+  }
+}
+
+.page-description {
+  font-weight: 500;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .page-description {
+    font-size: 2rem;
+  }
+}
+
+.page-description-subtitle {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .page-description-subtitle {
+    font-size: 1.6rem;
+  }
+}
+
+.page-description-container {
+  border-bottom: 1.5px solid #1f1f1f;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
 }
 
 * {
@@ -132,11 +181,17 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 
+.text-highlight {
+  color: #1530ec;
+  font-style: italic;
+}
+
 .container {
   width: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media only screen and (min-width: 600px) {
   .container {

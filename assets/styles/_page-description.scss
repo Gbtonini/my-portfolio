@@ -1,0 +1,42 @@
+.page-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+
+  img {
+    font-size: 1.25rem;
+    margin-right: 0.3rem;
+  }
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.25rem;
+  }
+}
+
+.page-description {
+  font-weight: 500;
+  font-size: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.page-description-subtitle {
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin-top: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.6rem;
+  }
+}
+
+.page-description-container {
+  border-bottom: 1.5px solid #1f1f1f;
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+}
