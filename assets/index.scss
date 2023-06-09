@@ -5,6 +5,7 @@
 @import "styles/grid";
 @import "styles/shared";
 @import "styles/margin-padding";
+@import "styles/mobile-menu";
 
 * {
   box-sizing: border-box;
@@ -15,41 +16,6 @@
 .text-highlight {
   color: $primary-color;
   font-style: italic;
-}
-
-#mobile-menu {
-  backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.3);
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  width: 100vw;
-  right: -100vw;
-  transition: ease 0.3s;
-  font-size: 1.5rem;
-
-  .mobile-menu-header {
-    display: flex;
-    justify-content: end;
-    height: 3rem;
-
-    button {
-      background: none;
-      border: none;
-      padding: 0;
-    }
-  }
-
-  ul {
-    li {
-      margin-bottom: 1rem;
-
-      :last-child {
-        margin-bottom: 0;
-      }
-    }
-  }
 }
 
 nav {
