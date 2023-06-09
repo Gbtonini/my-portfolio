@@ -999,6 +999,9 @@ header.background-banner .logo a {
 #mobile-menu ul li {
   margin-bottom: 1rem;
 }
+#mobile-menu ul li a {
+  color: #333;
+}
 #mobile-menu ul li :last-child {
   margin-bottom: 0;
 }
