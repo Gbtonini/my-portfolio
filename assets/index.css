@@ -22,6 +22,61 @@ footer {
           justify-content: space-between;
 }
 
+header .header-about-me-container {
+  padding-bottom: 3rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+      grid-template-areas: "title" "pic" "description";
+}
+header .header-about-me-container h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  font-weight: 300;
+  grid-area: title;
+}
+header .header-about-me-container .about-me-description {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+header .header-about-me-container .profile-pic {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -o-object-position: top center;
+     object-position: top center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  max-height: 285px;
+  max-width: 325px;
+  width: 100%;
+  margin: 0 auto;
+  grid-area: pic;
+}
+@media only screen and (min-width: 600px) {
+  header .header-about-me-container {
+    margin-top: 3rem;
+        grid-template-areas: "pic title" "pic description";
+  }
+  header .header-about-me-container h1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  header .header-about-me-container .about-me-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  header .header-about-me-container .profile-pic {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+}
 header .active-page {
   color: #1530ec;
   font-weight: 600;
@@ -55,6 +110,21 @@ header .header-container .menu-button {
 header .header-container .menu-button img {
   width: 3rem;
 }
+header .header-arrow {
+  cursor: pointer;
+  -webkit-animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
+          animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
+}
+header .desktop-header-arrow {
+  cursor: pointer;
+  display: none;
+  max-width: 16rem;
+}
+@media only screen and (min-width: 600px) {
+  header .desktop-header-arrow {
+    display: unset;
+  }
+}
 header .header-content {
   padding-top: 2.3rem;
   padding-bottom: 3rem;
@@ -71,21 +141,6 @@ header .header-content h1 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-  }
-}
-header .header-content .header-arrow {
-  cursor: pointer;
-  -webkit-animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
-          animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
-}
-header .header-content .desktop-header-arrow {
-  cursor: pointer;
-  display: none;
-  max-width: 16rem;
-}
-@media only screen and (min-width: 600px) {
-  header .header-content .desktop-header-arrow {
-    display: unset;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -115,7 +170,7 @@ header nav ul li {
   header nav {
     display: unset;
   }
-  header .header-arrow {
+  header .desktop-header-arrow + .header-arrow {
     display: none;
   }
 }
@@ -391,6 +446,19 @@ header.background-banner .logo a {
 
 .work-card > img {
   width: 100%;
+}
+
+.text-highlight {
+  color: #1530ec;
+  font-style: italic;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.font-w-500 {
+  font-weight: 500;
 }
 
 .mt-1 {
@@ -836,11 +904,6 @@ header.background-banner .logo a {
           box-sizing: border-box;
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
-
-.text-highlight {
-  color: #1530ec;
-  font-style: italic;
 }
 
 nav ul {

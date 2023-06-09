@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="background-banner">
       <div class="container">
         <div class="header-container">
           <div class="logo"><a href="./index.html">Gab Tonini</a></div>
@@ -37,8 +37,32 @@
             </ul>
           </nav>
           <button class="menu-button" onclick="openMenu()">
-            <img src="./assets/icons/menu.svg" />
+            <img src="./assets/icons/menu-light.svg" />
           </button>
+        </div>
+        <div class="header-about-me-container">
+          <h1>
+            Hello, <span class="font-w-500 italic">I'm</span> <br />
+            Gabriela Tonini
+          </h1>
+          <img class="profile-pic" src="./assets/images/profile-picture.png" />
+          <div class="about-me-description">
+            <p class="mb-1">
+              My work is mainly focused on third-dimension modeling, texturing
+              and rendering. I like exploring the creatures with a touch of dark
+              surrealism for characters and production.
+            </p>
+            <p>
+              Now I'm an interactive media design student in Portugal ⏤
+              currently freelancing and seeking internship opportunities.
+            </p>
+            <img
+              onclick="scrollToInitialSection()"
+              class="header-arrow mt-1"
+              src="./assets/icons/down-arrow.svg"
+              alt="Ícone de uma seta apontando para baixo"
+            />
+          </div>
         </div>
       </div>
     </header>

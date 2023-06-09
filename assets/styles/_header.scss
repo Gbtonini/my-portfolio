@@ -1,4 +1,44 @@
 header {
+  .header-about-me-container {
+    padding-bottom: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "title"
+      "pic"
+      "description";
+
+    h1 {
+      font-weight: 300;
+      grid-area: title;
+    }
+
+    .about-me-description {
+      grid-area: description;
+    }
+
+    .profile-pic {
+      object-position: top center;
+      object-fit: cover;
+      display: block;
+      max-height: 285px;
+      max-width: 325px;
+      width: 100%;
+      margin: 0 auto;
+      grid-area: pic;
+    }
+
+    @media only screen and (min-width: $mobile-breakpoint) {
+      margin-top: 3rem;
+
+      grid-template-areas:
+        "pic title"
+        "pic description";
+    }
+  }
+
   .active-page {
     color: $primary-color;
     font-weight: 600;
@@ -32,6 +72,21 @@ header {
     }
   }
 
+  .header-arrow {
+    cursor: pointer;
+    animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
+  }
+
+  .desktop-header-arrow {
+    cursor: pointer;
+    display: none;
+    max-width: 16rem;
+
+    @media only screen and (min-width: $mobile-breakpoint) {
+      display: unset;
+    }
+  }
+
   .header-content {
     padding-top: 2.3rem;
     padding-bottom: 3rem;
@@ -47,21 +102,6 @@ header {
       @media only screen and (min-width: $mobile-breakpoint) {
         text-align: center;
         align-self: center;
-      }
-    }
-
-    .header-arrow {
-      cursor: pointer;
-      animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
-    }
-
-    .desktop-header-arrow {
-      cursor: pointer;
-      display: none;
-      max-width: 16rem;
-
-      @media only screen and (min-width: $mobile-breakpoint) {
-        display: unset;
       }
     }
 
@@ -96,7 +136,7 @@ header {
       display: unset;
     }
 
-    .header-arrow {
+    .desktop-header-arrow + .header-arrow {
       display: none;
     }
   }
