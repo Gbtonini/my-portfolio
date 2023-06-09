@@ -10,8 +10,8 @@ function closeMenu() {
   getMenu().style.right = null;
 }
 
-function scrollToDescriptionSection() {
-  document.getElementById("description-section").scrollIntoView({
+function scrollToInitialSection() {
+  document.getElementById("initial-section").scrollIntoView({
     behavior: "smooth",
   });
 }

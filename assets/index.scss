@@ -1,7 +1,10 @@
 @import "styles/colors";
 @import "styles/footer";
 @import "styles/header";
-@import "styles/page-description";
+@import "styles/sections";
+@import "styles/grid";
+@import "styles/shared";
+@import "styles/margin-padding";
 
 * {
   box-sizing: border-box;
@@ -75,14 +78,6 @@ nav {
       }
     }
   }
-}
-
-.section-title {
-  border-bottom: 3px solid #000000;
-  padding: 0.8rem 0;
-  font-weight: 400;
-  font-size: 1rem;
-  margin-bottom: 1rem;
 }
 
 .section-background {
