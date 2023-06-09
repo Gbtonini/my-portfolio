@@ -97,3 +97,72 @@
     }
   }
 }
+
+.experience-section {
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .experience-section-item {
+    border-bottom: 2px solid $separator;
+    padding: 1.5rem 0 2rem;
+    display: grid;
+    gap: 1rem;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .experience-section-item-tags {
+      > span {
+        font-size: 0.75rem;
+        font-weight: 500;
+        border: 1.5px solid $primary-color;
+        border-radius: 2rem;
+        padding: 0.25rem 1.2rem;
+        margin-right: 0.8rem;
+
+        :last-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .experience-section-item-details {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+
+    .experience-section-item-description {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    @media only screen and (min-width: $mobile-breakpoint) {
+      grid-template-areas:
+        "title details"
+        "tags description";
+
+      h3 {
+        grid-area: title;
+      }
+
+      .experience-section-item-tags {
+        grid-area: tags;
+      }
+
+      .experience-section-item-details {
+        grid-area: details;
+      }
+
+      .experience-section-item-description {
+        grid-area: description;
+      }
+    }
+  }
+}
