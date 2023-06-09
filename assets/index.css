@@ -186,11 +186,30 @@ header.background-banner .logo a {
 
 .services-section-description {
   font-size: 2rem;
-  margin: 2rem 0;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .services-section-redirect-arrow-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
 .services-section-redirect-arrow {
   width: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .services-section-redirect-arrow {
+    width: 3rem;
+  }
 }
 
 .restaura-jeans-banner {
@@ -204,6 +223,10 @@ header.background-banner .logo a {
   font-weight: 400;
   margin: 0;
   line-height: 2rem;
+}
+.restaura-jeans-title a {
+  color: #000000;
+  text-decoration: none;
 }
 .restaura-jeans-title img {
   width: 0.9rem;
@@ -326,6 +349,8 @@ header.background-banner .logo a {
 .work-link {
   font-size: 1.25rem;
   font-weight: 400;
+  text-decoration: none;
+  color: #000000;
 }
 .work-link img {
   width: 0.8rem;
