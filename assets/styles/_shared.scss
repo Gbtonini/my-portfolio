@@ -40,3 +40,45 @@
     padding-left: 4rem;
   }
 }
+
+.section-description {
+  font-weight: 500;
+  font-size: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 2rem;
+  }
+}
+
+.page-sub-description {
+  font-size: 0.8rem;
+  font-weight: 200;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 1.6rem;
+  }
+}
+
+.section-content {
+  margin: 1rem 0 2rem;
+}
+
+.divider {
+  border-bottom: 2px solid $separator;
+  margin: 1.5rem 0;
+}
+
+.work-link {
+  font-size: 1.25rem;
+  font-weight: 400;
+
+  img {
+    width: 0.8rem;
+  }
+}
+
+.work-card {
+  > img {
+    width: 100%;
+  }
+}

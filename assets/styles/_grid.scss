@@ -1,8 +1,13 @@
-.grid-50-50 {
+.responsive-grid-50-50 {
   display: grid;
   gap: 1.5rem;
 
   @media only screen and (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.grid-50-50 {
+  display: grid;
+  gap: 1.5rem;
 }

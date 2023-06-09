@@ -131,7 +131,6 @@ header.background-banner .header-container {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 1rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -149,42 +148,47 @@ header.background-banner .header-container {
   }
 }
 
-.section-description {
-  font-weight: 500;
-  font-size: 1rem;
-}
-@media only screen and (min-width: 600px) {
-  .section-description {
-    font-size: 2rem;
-  }
+.services-section-description {
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 
-.page-description-subtitle {
-  font-size: 0.8rem;
-  font-weight: 200;
-  margin-top: 1rem;
-}
-@media only screen and (min-width: 600px) {
-  .page-description-subtitle {
-    font-size: 1.6rem;
-  }
+.services-section-redirect-arrow {
+  width: 2rem;
 }
 
-.page-description-container {
-  padding: 1.5rem 0;
-  margin-bottom: 1rem;
+.restaura-jeans-banner {
+  background-image: url(images/restaura-jeans-banner.png);
+  background-size: cover;
+  height: 220px;
+}
+
+.restaura-jeans-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2rem;
+}
+.restaura-jeans-title img {
+  width: 0.9rem;
+}
+
+.responsive-grid-50-50 {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+@media only screen and (min-width: 600px) {
+  .responsive-grid-50-50 {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .grid-50-50 {
   display: -ms-grid;
   display: grid;
   gap: 1.5rem;
-}
-@media only screen and (min-width: 600px) {
-  .grid-50-50 {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .w-100 {
@@ -238,6 +242,47 @@ header.background-banner .header-container {
     padding-right: 4rem;
     padding-left: 4rem;
   }
+}
+
+.section-description {
+  font-weight: 500;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 600px) {
+  .section-description {
+    font-size: 2rem;
+  }
+}
+
+.page-sub-description {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+@media only screen and (min-width: 600px) {
+  .page-sub-description {
+    font-size: 1.6rem;
+  }
+}
+
+.section-content {
+  margin: 1rem 0 2rem;
+}
+
+.divider {
+  border-bottom: 2px solid #1f1f1f;
+  margin: 1.5rem 0;
+}
+
+.work-link {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.work-link img {
+  width: 0.8rem;
+}
+
+.work-card > img {
+  width: 100%;
 }
 
 .mt-1 {
