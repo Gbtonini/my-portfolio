@@ -86,13 +86,13 @@ header nav ul li {
   }
 }
 
-header.section-background {
+header.background-banner {
   color: #fff;
 }
-header.section-background ul a {
+header.background-banner ul a {
   color: #fff;
 }
-header.section-background .header-container {
+header.background-banner .header-container {
   border-color: #fff;
 }
 
@@ -169,7 +169,6 @@ header.section-background .header-container {
 }
 
 .page-description-container {
-  border-bottom: 1.5px solid #1f1f1f;
   padding: 1.5rem 0;
   margin-bottom: 1rem;
 }
@@ -216,6 +215,10 @@ header.section-background .header-container {
 .contact-info span:first-child {
   color: #1530ec;
   text-transform: uppercase;
+}
+
+.background-banner {
+  background-image: url(images/bg.png);
 }
 
 .mt-1 {
@@ -688,8 +691,4 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-}
-
-.section-background {
-  background-image: url(images/bg.png);
 }
