@@ -23,4 +23,20 @@
 
 .background-banner {
   background-image: url(images/bg.png);
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 600px) {
+    width: 100%;
+    max-width: 1280px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }

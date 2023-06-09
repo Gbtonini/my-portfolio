@@ -40,6 +40,7 @@ header .header-container .logo {
   font-size: 1.1rem;
 }
 header .header-container .menu-button {
+  cursor: pointer;
   background: none;
   border: none;
   padding: 0;
@@ -55,8 +56,10 @@ header .header-content h1 {
   font-size: 3.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  line-height: 4rem;
 }
 header .header-content .header-arrow {
+  cursor: pointer;
   -webkit-animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
           animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
 }
@@ -219,6 +222,23 @@ header.background-banner .header-container {
 
 .background-banner {
   background-image: url(images/bg.png);
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 }
 
 .mt-1 {
@@ -631,21 +651,6 @@ header.background-banner .header-container {
 .text-highlight {
   color: #1530ec;
   font-style: italic;
-}
-
-.container {
-  width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (min-width: 600px) {
-  .container {
-    width: 100%;
-    max-width: 1280px;
-    padding: 1rem 3rem;
-  }
 }
 
 #mobile-menu {

@@ -11,6 +11,7 @@ header {
     }
 
     .menu-button {
+      cursor: pointer;
       background: none;
       border: none;
       padding: 0;
@@ -29,9 +30,11 @@ header {
       font-size: 3.5rem;
       font-weight: 400;
       margin-bottom: 2rem;
+      line-height: 4rem;
     }
 
     .header-arrow {
+      cursor: pointer;
       animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
     }
   }
