@@ -241,10 +241,38 @@ header.background-banner .logo a {
   }
 }
 
+.contact-section-links {
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+}
+.contact-section-links li {
+  margin-bottom: 0.75rem;
+}
+.contact-section-links li :last-child {
+  margin-bottom: 0;
+}
+.contact-section-links img {
+  width: 0.6rem;
+}
+.contact-section-links a {
+  color: #000000;
+  text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+  .contact-section-links {
+    font-size: 1.25rem;
+  }
+  .contact-section-links img {
+    width: 0.8rem;
+  }
+}
+
 .responsive-grid-50-50 {
   display: -ms-grid;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 @media only screen and (min-width: 600px) {
   .responsive-grid-50-50 {
@@ -293,6 +321,11 @@ header.background-banner .logo a {
 .contact-info span:first-child {
   color: #1530ec;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 600px) {
+  .contact-info {
+    font-size: 1rem;
+  }
 }
 
 .background-banner {

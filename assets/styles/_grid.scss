@@ -1,6 +1,6 @@
 .responsive-grid-50-50 {
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 
   @media only screen and (min-width: $mobile-breakpoint) {
     grid-template-columns: 1fr 1fr;
