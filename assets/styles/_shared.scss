@@ -11,6 +11,10 @@
   color: $white;
 }
 
+.color-primary {
+  color: $primary-color;
+}
+
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -47,6 +51,7 @@
 
   @media only screen and (min-width: 600px) {
     font-size: 2rem;
+    max-width: 850px;
   }
 }
 

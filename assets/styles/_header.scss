@@ -33,9 +33,31 @@ header {
       line-height: 4rem;
     }
 
+    .arrows-container {
+      @media only screen and (min-width: 600px) {
+        text-align: center;
+        align-self: center;
+      }
+    }
+
     .header-arrow {
       cursor: pointer;
       animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
+    }
+
+    .desktop-header-arrow {
+      cursor: pointer;
+      display: none;
+      max-width: 16rem;
+
+      @media only screen and (min-width: 600px) {
+        display: unset;
+      }
+    }
+
+    @media only screen and (min-width: 600px) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
     }
   }
 
@@ -53,7 +75,7 @@ header {
 
   @media only screen and (min-width: 600px) {
     .header-container {
-      border-bottom: 3px solid #000000;
+      border-bottom: 2px solid #000000;
 
       .menu-button {
         display: none;
@@ -71,16 +93,16 @@ header {
 }
 
 header.background-banner {
-  color: #fff;
+  color: $white;
 
   ul {
     a {
-      color: #fff;
+      color: $white;
     }
   }
 
   .header-container {
-    border-color: #fff;
+    border-color: $white;
   }
 }
 

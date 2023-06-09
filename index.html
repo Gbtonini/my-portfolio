@@ -16,37 +16,55 @@
   </head>
 
   <body>
-    <header class="container background-banner">
-      <div class="header-container">
-        <div class="logo">Gab Tonini</div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="menu-button" onclick="openMenu()">
-          <img src="./assets/icons/menu-light.svg" />
-        </button>
-      </div>
-      <div class="header-content">
-        <h1>Bringing your ideas to life</h1>
-        <img
-          onclick="scrollToInitialSection()"
-          class="header-arrow"
-          src="./assets/icons/down-arrow.svg"
-          alt="Ícone de uma seta apontando para baixo"
-        />
+    <header class="background-banner">
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">Gab Tonini</div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Work</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="menu-button" onclick="openMenu()">
+            <img src="./assets/icons/menu-light.svg" />
+          </button>
+        </div>
+        <div class="header-content">
+          <div class="responsive-grid-50-50">
+            <div>
+              <h1>
+                Bringing <br />
+                your ideas <br />
+                to life
+              </h1>
+            </div>
+            <div class="arrows-container">
+              <img
+                onclick="scrollToInitialSection()"
+                class="desktop-header-arrow"
+                src="./assets/icons/scroll-to-explore.png"
+                alt="Ícone de uma seta apontando para baixo"
+              />
+              <img
+                onclick="scrollToInitialSection()"
+                class="header-arrow"
+                src="./assets/icons/down-arrow.svg"
+                alt="Ícone de uma seta apontando para baixo"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -95,18 +113,20 @@
       </div>
 
       <div class="container">
-        <h2 class="restaura-jeans-title">
-          <span>
-            Restaura <br />
-            Jeans
-            <img src="./assets/icons/link-arrow.png" />
-          </span>
-        </h2>
-        <p class="page-sub-description mt-1 mb-2">
-          The Restaura Jeans WebApp provides a tailored experience by analyzing
-          a user's skin tone, hair, eyes, and preferences through a quick quiz,
-          ultimately delivering the perfect color pack.
-        </p>
+        <div class="responsive-grid-50-50">
+          <h2 class="restaura-jeans-title">
+            <span>
+              Restaura <br />
+              Jeans
+              <img src="./assets/icons/link-arrow.png" />
+            </span>
+          </h2>
+          <p class="page-sub-description mt-1 mb-2">
+            The Restaura Jeans WebApp provides a tailored experience by
+            analyzing a user's skin tone, hair, eyes, and preferences through a
+            quick quiz, ultimately delivering the perfect color pack.
+          </p>
+        </div>
       </div>
 
       <div class="restaura-jeans-banner"></div>
@@ -130,8 +150,8 @@
       </div>
     </section>
 
-    <section class="mb-2">
-      <div class="container background-banner pt-2 pb-2">
+    <section class="mb-2 background-banner">
+      <div class="container pt-2 pb-2">
         <h2 class="section-title color-white">
           <img src="./assets/icons/title-icon-white.svg" />
           <span>Services</span>
@@ -190,7 +210,7 @@
         <div class="section-content">
           <div class="responsive-grid-50-50">
             <div class="vertical-align">
-              <p class="section-description">
+              <p class="section-description color-primary">
                 It's time to talk about your project
               </p>
             </div>

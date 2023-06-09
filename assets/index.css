@@ -57,10 +57,34 @@ header .header-content h1 {
   margin-bottom: 2rem;
   line-height: 4rem;
 }
+@media only screen and (min-width: 600px) {
+  header .header-content .arrows-container {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
 header .header-content .header-arrow {
   cursor: pointer;
   -webkit-animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
           animation: arrowRepeatingAnimation 2s infinite ease-in-out forwards;
+}
+header .header-content .desktop-header-arrow {
+  cursor: pointer;
+  display: none;
+  max-width: 16rem;
+}
+@media only screen and (min-width: 600px) {
+  header .header-content .desktop-header-arrow {
+    display: unset;
+  }
+}
+@media only screen and (min-width: 600px) {
+  header .header-content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 header nav {
   display: none;
@@ -75,7 +99,7 @@ header nav ul li {
 }
 @media only screen and (min-width: 600px) {
   header .header-container {
-    border-bottom: 3px solid #000000;
+    border-bottom: 2px solid #000000;
   }
   header .header-container .menu-button {
     display: none;
@@ -89,13 +113,13 @@ header nav ul li {
 }
 
 header.background-banner {
-  color: #fff;
+  color: #ffffff;
 }
 header.background-banner ul a {
-  color: #fff;
+  color: #ffffff;
 }
 header.background-banner .header-container {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 @-webkit-keyframes arrowRepeatingAnimation {
@@ -172,6 +196,15 @@ header.background-banner .header-container {
 .restaura-jeans-title img {
   width: 0.9rem;
 }
+@media only screen and (min-width: 600px) {
+  .restaura-jeans-title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .restaura-jeans-title img {
+    width: 1.8rem;
+  }
+}
 
 .responsive-grid-50-50 {
   display: -ms-grid;
@@ -206,6 +239,10 @@ header.background-banner .header-container {
 
 .color-white {
   color: #ffffff;
+}
+
+.color-primary {
+  color: #1530ec;
 }
 
 .contact-info {
@@ -251,6 +288,7 @@ header.background-banner .header-container {
 @media only screen and (min-width: 600px) {
   .section-description {
     font-size: 2rem;
+    max-width: 850px;
   }
 }
 
