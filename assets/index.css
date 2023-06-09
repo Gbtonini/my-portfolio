@@ -22,6 +22,14 @@ footer {
           justify-content: space-between;
 }
 
+header .active-page {
+  color: #1530ec;
+  font-weight: 600;
+}
+header a {
+  color: #000000;
+  text-decoration: none;
+}
 header .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,11 +123,15 @@ header nav ul li {
 header.background-banner {
   color: #ffffff;
 }
-header.background-banner ul a {
+header.background-banner a {
   color: #ffffff;
+  text-decoration: none;
 }
 header.background-banner .header-container {
   border-color: #ffffff;
+}
+header.background-banner .logo a {
+  color: #ffffff;
 }
 
 @-webkit-keyframes arrowRepeatingAnimation {

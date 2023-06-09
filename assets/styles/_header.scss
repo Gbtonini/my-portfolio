@@ -1,4 +1,14 @@
 header {
+  .active-page {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -95,14 +105,19 @@ header {
 header.background-banner {
   color: $white;
 
-  ul {
-    a {
-      color: $white;
-    }
+  a {
+    color: $white;
+    text-decoration: none;
   }
 
   .header-container {
     border-color: $white;
+  }
+
+  .logo {
+    a {
+      color: $white;
+    }
   }
 }
 
