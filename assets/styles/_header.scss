@@ -32,10 +32,15 @@ header {
 
     @media only screen and (min-width: $mobile-breakpoint) {
       margin-top: 3rem;
-
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr;
       grid-template-areas:
         "pic title"
         "pic description";
+
+      .profile-pic {
+        max-height: unset;
+      }
     }
   }
 

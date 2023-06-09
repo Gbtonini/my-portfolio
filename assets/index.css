@@ -61,19 +61,26 @@ header .header-about-me-container .profile-pic {
 @media only screen and (min-width: 600px) {
   header .header-about-me-container {
     margin-top: 3rem;
+    gap: 3rem;
+    -ms-grid-columns: 1fr 3rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto 3rem auto;
         grid-template-areas: "pic title" "pic description";
+  }
+  header .header-about-me-container .profile-pic {
+    max-height: unset;
   }
   header .header-about-me-container h1 {
     -ms-grid-row: 1;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
   }
   header .header-about-me-container .about-me-description {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
   header .header-about-me-container .profile-pic {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
   }
 }
@@ -336,11 +343,14 @@ header.background-banner .logo a {
   padding: 1.5rem 0 2rem;
   display: -ms-grid;
   display: grid;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 .experience-section .experience-section-item h3 {
   font-size: 1rem;
   font-weight: 500;
+}
+.experience-section .experience-section-item .experience-section-item-tags {
+  margin: 0.75rem 0;
 }
 .experience-section .experience-section-item .experience-section-item-tags > span {
   font-size: 0.75rem;
@@ -385,7 +395,7 @@ header.background-banner .logo a {
   @media only screen and (min-width: 600px) {
   .experience-section .experience-section-item h3 {
       -ms-grid-row: 1;
-      -ms-grid-column: 2;
+      -ms-grid-column: 3;
   }
   .experience-section .experience-section-item > h3 {
       -ms-grid-row: 1;
@@ -400,8 +410,8 @@ header.background-banner .logo a {
       -ms-grid-column: 2;
   }
   .experience-section .experience-section-item .experience-section-item-description {
-      -ms-grid-row: 2;
-      -ms-grid-column: 2;
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
   }
   .experience-section .experience-section-item > .experience-section-item-description {
       -ms-grid-row: 2;
