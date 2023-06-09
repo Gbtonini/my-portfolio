@@ -34,7 +34,7 @@ header {
     }
 
     .arrows-container {
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: $mobile-breakpoint) {
         text-align: center;
         align-self: center;
       }
@@ -50,12 +50,12 @@ header {
       display: none;
       max-width: 16rem;
 
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: $mobile-breakpoint) {
         display: unset;
       }
     }
 
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: $mobile-breakpoint) {
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
@@ -73,7 +73,7 @@ header {
     }
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: $mobile-breakpoint) {
     .header-container {
       border-bottom: 2px solid #000000;
 
