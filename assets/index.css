@@ -315,21 +315,6 @@ header.background-banner .logo a {
 .contact-section-links li :last-child {
   margin-bottom: 0;
 }
-.contact-section-links img {
-  width: 0.6rem;
-}
-.contact-section-links a {
-  color: #000000;
-  text-decoration: none;
-}
-@media only screen and (min-width: 600px) {
-  .contact-section-links {
-    font-size: 1.25rem;
-  }
-  .contact-section-links img {
-    width: 0.8rem;
-  }
-}
 
 .experience-section {
   margin-bottom: 2rem;
@@ -351,17 +336,6 @@ header.background-banner .logo a {
 }
 .experience-section .experience-section-item .experience-section-item-tags {
   margin: 0.75rem 0;
-}
-.experience-section .experience-section-item .experience-section-item-tags > span {
-  font-size: 0.75rem;
-  font-weight: 500;
-  border: 1.5px solid #1530ec;
-  border-radius: 2rem;
-  padding: 0.25rem 1.2rem;
-  margin-right: 0.8rem;
-}
-.experience-section .experience-section-item .experience-section-item-tags > span :last-child {
-  margin: 0;
 }
 .experience-section .experience-section-item .experience-section-item-details {
   text-transform: uppercase;
@@ -538,14 +512,22 @@ header.background-banner .logo a {
   margin: 1.5rem 0;
 }
 
-.work-link {
-  font-size: 1.25rem;
+.default-link {
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
   color: #000000;
 }
-.work-link img {
-  width: 0.8rem;
+.default-link img {
+  width: 0.6rem;
+}
+@media only screen and (min-width: 600px) {
+  .default-link {
+    font-size: 1.25rem;
+  }
+  .default-link img {
+    width: 0.8rem;
+  }
 }
 
 .work-card > img {
@@ -635,6 +617,18 @@ header.background-banner .logo a {
     line-height: 1.25rem;
     padding: 0.75rem 1.5rem;
   }
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1.5px solid #1530ec;
+  border-radius: 2rem;
+  padding: 0.25rem 1.2rem;
+  margin-right: 0.8rem;
+}
+.tag:last-of-type {
+  margin: 0;
 }
 
 .mt-1 {

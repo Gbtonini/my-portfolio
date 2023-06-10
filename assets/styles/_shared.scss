@@ -77,14 +77,21 @@
   margin: 1.5rem 0;
 }
 
-.work-link {
-  font-size: 1.25rem;
+.default-link {
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
   color: $black;
 
   img {
-    width: 0.8rem;
+    width: 0.6rem;
+  }
+
+  @media only screen and (min-width: $mobile-breakpoint) {
+    font-size: 1.25rem;
+    img {
+      width: 0.8rem;
+    }
   }
 }
 
@@ -175,5 +182,18 @@
     font-size: 1rem;
     line-height: 1.25rem;
     padding: 0.75rem 1.5rem;
+  }
+}
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1.5px solid $primary-color;
+  border-radius: 2rem;
+  padding: 0.25rem 1.2rem;
+  margin-right: 0.8rem;
+
+  &:last-of-type {
+    margin: 0;
   }
 }

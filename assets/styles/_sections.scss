@@ -80,22 +80,6 @@
       margin-bottom: 0;
     }
   }
-
-  img {
-    width: 0.6rem;
-  }
-
-  a {
-    color: $black;
-    text-decoration: none;
-  }
-
-  @media only screen and (min-width: $mobile-breakpoint) {
-    font-size: 1.25rem;
-    img {
-      width: 0.8rem;
-    }
-  }
 }
 
 .experience-section {
@@ -119,18 +103,6 @@
 
     .experience-section-item-tags {
       margin: 0.75rem 0;
-      > span {
-        font-size: 0.75rem;
-        font-weight: 500;
-        border: 1.5px solid $primary-color;
-        border-radius: 2rem;
-        padding: 0.25rem 1.2rem;
-        margin-right: 0.8rem;
-
-        :last-child {
-          margin: 0;
-        }
-      }
     }
 
     .experience-section-item-details {
