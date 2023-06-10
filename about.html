@@ -1,202 +1,238 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gab Tonini | HOME</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/index.css" />
-    <script type="text/javascript" src="./assets/scripts.js"></script>
-  </head>
 
-  <body>
-    <header class="background-banner">
-      <div class="container">
-        <div class="header-container">
-          <div class="logo"><a href="./index.html">Gab Tonini</a></div>
-          <nav>
-            <ul>
-              <li>
-                <a href="./work.html">Work</a>
-              </li>
-              <li>
-                <a href="./service.html">Services</a>
-              </li>
-              <li>
-                <a href="./about.html" class="active-page">About</a>
-              </li>
-              <li>
-                <a href="./contact-me.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="menu-button" onclick="openMenu()">
-            <img src="./assets/icons/menu-light.svg" />
-          </button>
-        </div>
-        <div class="header-about-me-container">
-          <h1>
-            Hello, <span class="font-w-500 italic">I'm</span> <br />
-            Gabriela Tonini
-          </h1>
-          <img class="profile-pic" src="./assets/images/profile-picture.png" />
-          <div class="about-me-description">
-            <p class="mb-1">
-              My work is mainly focused on third-dimension modeling, texturing
-              and rendering. I like exploring the creatures with a touch of dark
-              surrealism for characters and production.
-            </p>
-            <p>
-              Now I'm an interactive media design student in Portugal ⏤
-              currently freelancing and seeking internship opportunities.
-            </p>
-            <img
-              onclick="scrollToInitialSection()"
-              class="header-arrow mt-1"
-              src="./assets/icons/down-arrow.svg"
-              alt="Ícone de uma seta apontando para baixo"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gab Tonini | HOME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/index.css" />
+  <script type="text/javascript" src="./assets/scripts.js"></script>
+</head>
 
-    <div id="mobile-menu" class="container">
-      <div class="mobile-menu-header">
-        <button onclick="closeMenu()">
-          <img src="assets/icons/close.svg" />
+<body>
+  <header class="background-banner">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo"><a href="./index.html">Gab Tonini</a></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./work.html">Work</a>
+            </li>
+            <li>
+              <a href="./service.html">Services</a>
+            </li>
+            <li>
+              <a href="./about.html" class="active-page">About</a>
+            </li>
+            <li>
+              <a href="./contact-me.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-button" onclick="openMenu()">
+          <img src="./assets/icons/menu-light.svg" />
         </button>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="./work.html">Work</a>
-          </li>
-          <li>
-            <a href="./service.html">Services</a>
-          </li>
-          <li>
-            <a href="./about.html">About</a>
-          </li>
-          <li>
-            <a href="./contact-me.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-about-me-container">
+        <h1>
+          Hello, <span class="font-w-500 italic">I'm</span> <br />
+          Gabriela Tonini
+        </h1>
+        <img class="profile-pic" src="./assets/images/profile-picture.png" />
+        <div class="about-me-description">
+          <p class="mb-1">
+            My work is mainly focused on third-dimension modeling, texturing
+            and rendering. I like exploring the creatures with a touch of dark
+            surrealism for characters and production.
+          </p>
+          <p>
+            Now I'm an interactive media design student in Portugal ⏤
+            currently freelancing and seeking internship opportunities.
+          </p>
+          <img onclick="scrollToInitialSection()" class="header-arrow mt-1" src="./assets/icons/down-arrow.svg"
+            alt="Ícone de uma seta apontando para baixo" />
+        </div>
+      </div>
     </div>
+  </header>
 
-    <section id="initial-section" class="mb-2 pt-2">
-      <div class="container">
-        <div class="experience-section">
-          <h2>Education</h2>
-          <div class="experience-section-item">
-            <h3>University of Lisbon</h3>
-            <div class="experience-section-item-tags">
-              <span> Night time </span>
-              <span> In-class </span>
-            </div>
-            <div class="experience-section-item-details">
-              Sep 2022 - PRESENT | Postgraduate Degree
-            </div>
-            <div class="experience-section-item-description">
-              Digital Experience Design
-            </div>
+  <div id="mobile-menu" class="container">
+    <div class="mobile-menu-header">
+      <button onclick="closeMenu()">
+        <img src="assets/icons/close.svg" />
+      </button>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="./work.html">Work</a>
+        </li>
+        <li>
+          <a href="./service.html">Services</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="./contact-me.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="initial-section" class="mb-2 pt-2">
+    <div class="container">
+      <div class="experience-section">
+        <h2>Education</h2>
+        <div class="experience-section-item">
+          <h3>University of Lisbon</h3>
+          <div class="experience-section-item-tags">
+            <span> Night time </span>
+            <span> In-class </span>
           </div>
-
-          <div class="experience-section-item">
-            <h3>Fean</h3>
-            <div class="experience-section-item-tags">
-              <span> Night time </span>
-              <span> In-class </span>
-            </div>
-            <div class="experience-section-item-details">
-              Mar 2018 - Dec 2021 | Bachelor's degree
-            </div>
-            <div class="experience-section-item-description">
-              Digital Experience Design
-            </div>
+          <div class="experience-section-item-details">
+            Sep 2022 - PRESENT | Postgraduate Degree
           </div>
-        </div>
-
-        <div class="experience-section">
-          <h2>Work Experience</h2>
-          <div class="experience-section-item">
-            <h3>Emotion Films</h3>
-            <div class="experience-section-item-tags">
-              <span> Full time </span>
-              <span> Hybrid </span>
-            </div>
-            <div class="experience-section-item-details">
-              Mar 2023 - Present · 2 mos
-            </div>
-            <div class="experience-section-item-description">
-              Graphic Designer
-            </div>
+          <div class="experience-section-item-description">
+            Digital Experience Design
           </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <h2 class="section-title">
-          <img src="./assets/icons/title-icon.svg" /> <span>Contact Me</span>
-        </h2>
-        <div class="section-content">
-          <div class="responsive-grid-50-50">
-            <div>
-              <p class="section-description color-primary">
-                It's time to talk about your project
-              </p>
-            </div>
-            <div>
-              <div class="contact-info mb-1">
-                <span>Email</span>
-                <span>gabrielatonini08@gmail.com</span>
-              </div>
-              <div class="contact-info">
-                <span>Whatsapp</span>
-                <span>+351 933 375 469</span>
-              </div>
-              <div class="divider"></div>
-
-              <ul class="contact-section-links">
-                <li>
-                  <a href="https://www.behance.net/Gbtonini" target="_blank">
-                    Behance <img src="./assets/icons/link-arrow.png" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/gbtonini/" target="_blank">
-                    Instagram <img src="./assets/icons/link-arrow.png" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/gbtonini/"
-                    target="_blank"
-                  >
-                    LinkedIn <img src="./assets/icons/link-arrow.png" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div class="experience-section-item">
+          <h3>Fean</h3>
+          <div class="experience-section-item-tags">
+            <span> Night time </span>
+            <span> In-class </span>
+          </div>
+          <div class="experience-section-item-details">
+            Mar 2018 - Dec 2021 | Bachelor's degree
+          </div>
+          <div class="experience-section-item-description">
+            Digital Experience Design
           </div>
         </div>
       </div>
-    </section>
 
-    <footer class="background-banner">
-      <div class="container footer-container">
-        <span> Copyright © 2023 | Gabriela Tonini </span>
-        <span> Made with 🖤 </span>
+      <div class="experience-section">
+        <h2>Work Experience</h2>
+        <div class="experience-section-item">
+          <h3>Emotion Films</h3>
+          <div class="experience-section-item-tags">
+            <span> Full time </span>
+            <span> Hybrid </span>
+          </div>
+          <div class="experience-section-item-details">
+            Mar 2023 - Present · 2 mos
+          </div>
+          <div class="experience-section-item-description">
+            Graphic Designer
+          </div>
+        </div>
+
+        <div class="experience-section-item">
+          <h3>D/Araújo</h3>
+          <div class="experience-section-item-tags">
+            <span> Full time </span>
+            <span> Hybrid </span>
+          </div>
+          <div class="experience-section-item-details">
+            Apr 2022 - Jul 2022 · 4 mos
+          </div>
+          <div class="experience-section-item-description">
+            Art Director
+          </div>
+        </div>
+
+        <div class="experience-section-item">
+          <h3>Henry Schein</h3>
+          <div class="experience-section-item-tags">
+            <span> Full time </span>
+            <span> Remote </span>
+          </div>
+          <div class="experience-section-item-details">
+            Sep 2021 - Mar 2022 · 7 mos
+          </div>
+          <div class="experience-section-item-description">
+            Designer
+          </div>
+        </div>
+
+        <div class="experience-section-item">
+          <h3>Pessoalize</h3>
+          <div class="experience-section-item-tags">
+            <span> Internship </span>
+            <span> Hybrid </span>
+          </div>
+          <div class="experience-section-item-details">
+            Feb 2021 - Jul 2021 · 6 mos
+          </div>
+          <div class="experience-section-item-description">
+            UX/UI Designer
+          </div>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="section-title">
+        <img src="./assets/icons/title-icon.svg" /> <span>Contact Me</span>
+      </h2>
+      <div class="section-content">
+        <div class="responsive-grid-50-50">
+          <div>
+            <p class="section-description color-primary">
+              It's time to talk about your project
+            </p>
+          </div>
+          <div>
+            <div class="contact-info mb-1">
+              <span>Email</span>
+              <span>gabrielatonini08@gmail.com</span>
+            </div>
+            <div class="contact-info">
+              <span>Whatsapp</span>
+              <span>+351 933 375 469</span>
+            </div>
+            <div class="divider"></div>
+
+            <ul class="contact-section-links">
+              <li>
+                <a href="https://www.behance.net/Gbtonini" target="_blank">
+                  Behance <img src="./assets/icons/link-arrow.png" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/gbtonini/" target="_blank">
+                  Instagram <img src="./assets/icons/link-arrow.png" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/gbtonini/" target="_blank">
+                  LinkedIn <img src="./assets/icons/link-arrow.png" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="background-banner">
+    <div class="container footer-container">
+      <span> Copyright © 2023 | Gabriela Tonini </span>
+      <span> Made with 🖤 </span>
+    </div>
+  </footer>
+</body>
+
 </html>
