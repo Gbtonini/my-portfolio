@@ -1,0 +1,17 @@
+.default-link {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: $black;
+
+  img {
+    width: 0.6rem;
+  }
+
+  @media only screen and (min-width: $mobile-breakpoint) {
+    font-size: 1.25rem;
+    img {
+      width: 0.8rem;
+    }
+  }
+}

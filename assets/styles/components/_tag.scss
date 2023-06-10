@@ -1,0 +1,12 @@
+.tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1.5px solid $primary-color;
+  border-radius: 2rem;
+  padding: 0.25rem 1.2rem;
+  margin-right: 0.8rem;
+
+  &:last-of-type {
+    margin: 0;
+  }
+}
