@@ -1,0 +1,37 @@
+.work-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  grid-template-areas:
+    "tags"
+    "banner"
+    "title";
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  .work-grid-tags {
+    grid-area: tags;
+
+    @media only screen and (min-width: $mobile-breakpoint) {
+      align-self: end;
+    }
+  }
+
+  .work-grid-title {
+    grid-area: title;
+  }
+
+  .work-grid-banner {
+    grid-area: banner;
+  }
+
+  @media only screen and (min-width: $mobile-breakpoint) {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "banner tags"
+      "banner title";
+  }
+}
