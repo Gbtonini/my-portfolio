@@ -1,22 +1,22 @@
-@import "styles/variables/colors";
-@import "styles/variables/consts";
+@import "variables/colors";
+@import "variables/consts";
 
-@import "styles/components/footer";
-@import "styles/components/header";
-@import "styles/components/mobile-menu";
-@import "styles/components/button";
-@import "styles/components/link";
-@import "styles/components/tag";
+@import "components/footer";
+@import "components/header";
+@import "components/mobile-menu";
+@import "components/button";
+@import "components/link";
+@import "components/tag";
 
-@import "styles/shared/sections";
-@import "styles/shared/grid";
-@import "styles/shared/misc";
-@import "styles/shared/margin-padding";
-@import "styles/shared/font-weight";
-@import "styles/shared/input-form";
+@import "shared/sections";
+@import "shared/grid";
+@import "shared/misc";
+@import "shared/margin-padding";
+@import "shared/font-weight";
+@import "shared/input-form";
 
-@import "styles/pages/contact";
-@import "styles/pages/work";
+@import "pages/contact";
+@import "pages/work";
 
 * {
   box-sizing: border-box;
