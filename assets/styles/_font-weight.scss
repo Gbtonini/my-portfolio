@@ -1,0 +1,13 @@
+$max: 900;
+
+@mixin list-loop($className) {
+  $i: 100;
+  @while $i <= $max {
+    #{$className + $i} {
+      font-weight: #{$i};
+    }
+    $i: $i + 100;
+  }
+}
+
+@include list-loop(".font-w-");

@@ -1,0 +1,13 @@
+.contact-form {
+  display: grid;
+
+  @media only screen and (min-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.contact-title {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}

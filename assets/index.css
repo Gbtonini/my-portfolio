@@ -565,6 +565,78 @@ header.background-banner .logo a {
   font-weight: 500;
 }
 
+.text-input-group {
+  margin-bottom: 1rem;
+}
+.text-input-group .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.text-input-group .input-container img {
+  width: 1.25rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.text-input-group .input-container input {
+  border: none;
+  width: 100%;
+  background: none;
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 600px) {
+  .text-input-group .input-container input {
+    font-size: 1rem;
+  }
+}
+.text-input-group .input-container,
+.text-input-group textarea {
+  border: 2px solid #1530ec;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+.text-input-group textarea {
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 100%;
+  resize: none;
+}
+.text-input-group label {
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.primary-button {
+  background-color: #1530ec;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.1rem;
+  color: #ffffff;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.primary-button:hover {
+  background-color: #1228b8;
+}
+@media only screen and (min-width: 600px) {
+  .primary-button {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -965,6 +1037,42 @@ header.background-banner .logo a {
   padding: 10rem;
 }
 
+.font-w-100 {
+  font-weight: 100;
+}
+
+.font-w-200 {
+  font-weight: 200;
+}
+
+.font-w-300 {
+  font-weight: 300;
+}
+
+.font-w-400 {
+  font-weight: 400;
+}
+
+.font-w-500 {
+  font-weight: 500;
+}
+
+.font-w-600 {
+  font-weight: 600;
+}
+
+.font-w-700 {
+  font-weight: 700;
+}
+
+.font-w-800 {
+  font-weight: 800;
+}
+
+.font-w-900 {
+  font-weight: 900;
+}
+
 #mobile-menu {
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -1004,6 +1112,23 @@ header.background-banner .logo a {
 }
 #mobile-menu ul li :last-child {
   margin-bottom: 0;
+}
+
+.contact-form {
+  display: -ms-grid;
+  display: grid;
+}
+@media only screen and (min-width: 600px) {
+  .contact-form {
+    -ms-grid-columns: 1fr 2rem 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.contact-title {
+  font-size: 2.25rem;
+  line-height: 3rem;
 }
 
 * {

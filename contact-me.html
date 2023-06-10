@@ -67,31 +67,54 @@
       </nav>
     </div>
 
-    <section>
+    <section class="pt-2 mb-2">
       <div class="container">
         <h2 class="section-title">
           <img src="./assets/icons/title-icon.svg" /> <span>Contact</span>
         </h2>
-        <div class="responsive-grid-50-50">
+        <div class="responsive-grid-50-50 mt-1 mb-2">
           <div>
-            <h3>Let's talk about it</h3>
+            <h3 class="contact-title font-w-400">
+              Let's talk <br />
+              about it
+            </h3>
           </div>
           <div>
-            <p>
+            <p class="font-w-200">
               Let's connect and build a meaningful professional relationship.
               Drop me a line, and let's explore how we can support each other.
             </p>
           </div>
         </div>
-        <form class="responsive-grid-50-50">
+        <form class="contact-form">
           <div>
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <div class="text-input-group">
+              <label for="input-email">Email</label>
+              <div class="input-container">
+                <input id="input-email" type="text" placeholder="Your Email" />
+                <img src="assets/icons/mail-icon.png" />
+              </div>
+            </div>
+
+            <div class="text-input-group">
+              <label for="input-name">Full Name</label>
+              <div class="input-container">
+                <input id="input-name" type="text" placeholder="Your Name" />
+                <img src="assets/icons/user-icon.png" />
+              </div>
+            </div>
           </div>
           <div>
-            <textarea></textarea>
-            <button>Send Message</button>
+            <div class="text-input-group">
+              <label for="input-message">Message</label>
+              <textarea
+                id="input-message"
+                rows="6"
+                placeholder="Enter your message"
+              >
+              </textarea>
+            </div>
+            <button class="primary-button">Send Message</button>
           </div>
         </form>
       </div>
