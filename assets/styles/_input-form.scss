@@ -1,0 +1,58 @@
+.text-input-group {
+  margin-bottom: 1rem;
+
+  .error-message {
+    color: $error-color;
+    font-size: 0.75rem;
+  }
+
+  .error-input,
+  .error-input > textarea {
+    border-color: $error-color !important;
+  }
+
+  .input-container {
+    display: flex;
+
+    img {
+      width: 1.25rem;
+      object-fit: contain;
+    }
+
+    input {
+      border: none;
+      width: 100%;
+      background: none;
+      outline-style: none;
+      box-shadow: none;
+      border-color: transparent;
+      font-size: 0.75rem;
+
+      @media only screen and (min-width: $mobile-breakpoint) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .input-container,
+  textarea {
+    border: 2px solid $primary-color;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  textarea {
+    outline-style: none;
+    box-shadow: none;
+    width: 100%;
+    resize: none;
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+}

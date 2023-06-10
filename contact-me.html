@@ -96,6 +96,7 @@
                 <input id="input-email" type="text" placeholder="Your Email" />
                 <img src="assets/icons/mail-icon.png" />
               </div>
+              <span class="error-message"></span>
             </div>
 
             <div class="text-input-group">
@@ -104,19 +105,29 @@
                 <input id="input-name" type="text" placeholder="Your Name" />
                 <img src="assets/icons/user-icon.png" />
               </div>
+              <span class="error-message"></span>
             </div>
           </div>
           <div>
             <div class="text-input-group">
               <label for="input-message">Message</label>
-              <textarea
-                id="input-message"
-                rows="6"
-                placeholder="Enter your message"
-              >
-              </textarea>
+              <div class="textarea-container">
+                <textarea
+                  id="input-message"
+                  rows="6"
+                  placeholder="Enter your message"
+                >
+                </textarea>
+              </div>
+              <span class="error-message"></span>
             </div>
-            <button class="primary-button">Send Message</button>
+            <button
+              onclick="sendMessage()"
+              class="primary-button"
+              type="button"
+            >
+              Send Message
+            </button>
           </div>
         </form>
       </div>
