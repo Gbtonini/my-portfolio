@@ -35,3 +35,32 @@
       "banner title";
   }
 }
+
+.work-details-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "banner"
+    "title"
+    "behance"
+    "description";
+
+  .work-details-banner {
+    grid-area: banner;
+    width: 100%;
+  }
+
+  .work-details-description {
+    grid-area: description;
+  }
+
+  .work-details-behance {
+    grid-area: behance;
+  }
+
+  @media only screen and (min-width: $sm) {
+    grid-template-areas:
+      "banner banner banner"
+      "title behance description";
+  }
+}

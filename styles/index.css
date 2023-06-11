@@ -1136,6 +1136,64 @@ header.background-banner .logo a {
   grid-area: banner;
 }
 @media only screen and (min-width: 600px) {
+  .work-grid {
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+        grid-template-areas: "banner tags" "banner title";
+  }
+  .work-grid > h1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .work-grid > h3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .work-grid > .experience-section-item-tags {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .work-grid > .work-grid-tags {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .work-grid > .work-grid-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .work-grid .work-grid-banner {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+  }
+}
+
+.work-details-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+      grid-template-areas: "banner" "title" "behance" "description";
+}
+.work-details-grid .work-details-banner {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  grid-area: banner;
+  width: 100%;
+}
+.work-details-grid .work-details-description {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: description;
+}
+.work-details-grid .work-details-behance {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: behance;
+}
+@media only screen and (min-width: 600px) {
   .experience-section .experience-section-item h3 {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
@@ -1172,39 +1230,63 @@ header.background-banner .logo a {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-}
-@media only screen and (min-width: 600px) {
-  .work-grid {
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-        grid-template-areas: "banner tags" "banner title";
-  }
-  .work-grid > h1 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  .work-grid > h3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  .work-grid > .experience-section-item-tags {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .work-grid > .work-grid-tags {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .work-grid > .work-grid-title {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  .work-grid .work-grid-banner {
+  .work-details-grid .work-details-banner {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
+  }
+  .work-details-grid .work-details-description {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .experience-section .experience-section-item > .work-details-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .work-details-grid {
+        grid-template-areas: "banner banner banner" "title behance description";
+  }
+  .work-details-grid > h1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .work-details-grid > .about-me-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .work-details-grid > h3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .work-details-grid > .experience-section-item-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .work-details-grid > .work-grid-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .work-details-grid > .work-grid-banner {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .work-details-grid > .work-details-banner {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+  .work-details-grid > .work-details-description {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .work-details-grid .work-details-behance {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
   }
 }
 
