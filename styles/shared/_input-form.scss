@@ -28,7 +28,7 @@
       border-color: transparent;
       font-size: 0.75rem;
 
-      @media only screen and (min-width: $mobile-breakpoint) {
+      @media only screen and (min-width: $sm) {
         font-size: 1rem;
       }
     }

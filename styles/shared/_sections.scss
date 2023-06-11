@@ -10,7 +10,7 @@
     margin-right: 0.3rem;
   }
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     font-size: 1.25rem;
   }
 }
@@ -21,7 +21,7 @@
 }
 
 .services-section-redirect-arrow-container {
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -31,7 +31,7 @@
 .services-section-redirect-arrow {
   width: 2rem;
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     width: 3rem;
   }
 }
@@ -57,7 +57,7 @@
     width: 0.9rem;
   }
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     font-size: 3rem;
     line-height: 4rem;
 
@@ -116,7 +116,7 @@
       font-weight: 500;
     }
 
-    @media only screen and (min-width: $mobile-breakpoint) {
+    @media only screen and (min-width: $sm) {
       grid-template-areas:
         "title details"
         "tags description";

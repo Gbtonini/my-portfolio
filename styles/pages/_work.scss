@@ -14,7 +14,7 @@
   .work-grid-tags {
     grid-area: tags;
 
-    @media only screen and (min-width: $mobile-breakpoint) {
+    @media only screen and (min-width: $sm) {
       align-self: end;
     }
   }
@@ -27,7 +27,7 @@
     grid-area: banner;
   }
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:

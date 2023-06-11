@@ -1,7 +1,7 @@
 .contact-form {
   display: grid;
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }

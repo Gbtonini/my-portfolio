@@ -30,7 +30,7 @@ header {
       grid-area: pic;
     }
 
-    @media only screen and (min-width: $mobile-breakpoint) {
+    @media only screen and (min-width: $sm) {
       margin-top: 3rem;
       gap: 3rem;
       grid-template-columns: 1fr 1fr;
@@ -87,7 +87,7 @@ header {
     display: none;
     max-width: 16rem;
 
-    @media only screen and (min-width: $mobile-breakpoint) {
+    @media only screen and (min-width: $sm) {
       display: unset;
     }
   }
@@ -104,13 +104,13 @@ header {
     }
 
     .arrows-container {
-      @media only screen and (min-width: $mobile-breakpoint) {
+      @media only screen and (min-width: $sm) {
         text-align: center;
         align-self: center;
       }
     }
 
-    @media only screen and (min-width: $mobile-breakpoint) {
+    @media only screen and (min-width: $sm) {
       padding-top: 4rem;
       padding-bottom: 4rem;
     }
@@ -128,7 +128,7 @@ header {
     }
   }
 
-  @media only screen and (min-width: $mobile-breakpoint) {
+  @media only screen and (min-width: $sm) {
     .header-container {
       border-bottom: 2px solid #000000;
 
