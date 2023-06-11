@@ -42,25 +42,71 @@
   grid-template-areas:
     "banner"
     "title"
-    "behance"
-    "description";
+    "description"
+    "behance";
+
+  .work-details-title {
+    grid-area: title;
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
 
   .work-details-banner {
     grid-area: banner;
     width: 100%;
+    height: 220px;
+    object-fit: cover;
+
+    @media only screen and (min-width: $sm) {
+      height: 300px;
+    }
+
+    @media only screen and (min-width: $md) {
+      height: 390px;
+    }
   }
 
   .work-details-description {
     grid-area: description;
+
+    p {
+      margin-bottom: 1rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      @media only screen and (min-width: $sm) {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 
   .work-details-behance {
     grid-area: behance;
+
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
   }
 
   @media only screen and (min-width: $sm) {
+    gap: 2rem;
+
     grid-template-areas:
       "banner banner banner"
       "title behance description";
+  }
+
+  @media only screen and (min-width: $md) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

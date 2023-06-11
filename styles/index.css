@@ -593,6 +593,14 @@ header.background-banner .logo a {
   font-style: italic;
 }
 
+.text-primary {
+  color: #1530ec;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -1174,7 +1182,19 @@ header.background-banner .logo a {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-      grid-template-areas: "banner" "title" "behance" "description";
+      grid-template-areas: "banner" "title" "description" "behance";
+}
+.work-details-grid .work-details-title {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+.work-details-grid .work-details-title .tag {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.work-details-grid .work-details-title h1 {
+  font-size: 2rem;
 }
 .work-details-grid .work-details-banner {
   -ms-grid-row: 1;
@@ -1182,14 +1202,38 @@ header.background-banner .logo a {
   -ms-grid-column: 1;
   grid-area: banner;
   width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (min-width: 600px) {
+  .work-details-grid .work-details-banner {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .work-details-grid .work-details-banner {
+    height: 390px;
+  }
 }
 .work-details-grid .work-details-description {
-  -ms-grid-row: 7;
+  -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: description;
 }
+.work-details-grid .work-details-description p {
+  margin-bottom: 1rem;
+}
+.work-details-grid .work-details-description p:last-of-type {
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 600px) {
+  .work-details-grid .work-details-description p {
+    margin-bottom: 1.5rem;
+  }
+}
 .work-details-grid .work-details-behance {
-  -ms-grid-row: 5;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: behance;
 }
@@ -1230,6 +1274,18 @@ header.background-banner .logo a {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
+  .work-details-grid .work-details-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .experience-section .experience-section-item > .work-details-title {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .work-grid > .work-details-title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
   .work-details-grid .work-details-banner {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
@@ -1244,49 +1300,64 @@ header.background-banner .logo a {
     -ms-grid-column: 2;
   }
 }
+.work-details-grid .work-details-behance h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 @media only screen and (min-width: 600px) {
   .work-details-grid {
+    gap: 2rem;
         grid-template-areas: "banner banner banner" "title behance description";
   }
   .work-details-grid > h1 {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
   .work-details-grid > .about-me-description {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
   .work-details-grid > h3 {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
   .work-details-grid > .experience-section-item-description {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
   .work-details-grid > .work-grid-title {
-    -ms-grid-row: 2;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
   .work-details-grid > .work-grid-banner {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 5;
+  }
+  .work-details-grid > .work-details-title {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
   }
   .work-details-grid > .work-details-banner {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 5;
   }
   .work-details-grid > .work-details-description {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
   }
   .work-details-grid .work-details-behance {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .work-details-grid {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
