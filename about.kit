@@ -3,155 +3,150 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <!-- @import components/head-->
+<!-- @import components/head-->
 
-  <body>
-    <header class="background-banner">
-      <div class="container">
-        <div class="header-container">
-          <div class="logo"><a href="./index.html">Gab Tonini</a></div>
-          <nav>
-            <ul>
-              <li>
-                <a href="./work.html">Work</a>
-              </li>
-              <li>
-                <a href="./about.html" class="active-page">About</a>
-              </li>
-              <li>
-                <a href="./contact-me.html">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <button
-            class="menu-button"
-            onclick="openMenu()"
-            aria-label="Mobile menu button"
-          >
-            <img alt="Mobile menu icon" src="./assets/icons/menu-light.svg" />
-          </button>
+<body>
+  <header class="background-banner">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo"><a href="./index.html">Gab Tonini</a></div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./work.html">Work</a>
+            </li>
+            <li>
+              <a href="./about.html" class="active-page">About</a>
+            </li>
+            <li>
+              <a href="./contact-me.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu-button" onclick="openMenu()" aria-label="Mobile menu button">
+          <img alt="Mobile menu icon" src="./assets/icons/menu-light.svg" />
+        </button>
+      </div>
+      <div class="header-about-me-container">
+        <h1>
+          Hello, <span class="font-w-500 italic">I'm</span> <br />
+          Gabriela Tonini
+        </h1>
+        <img class="profile-pic" src="./assets/images/profile-picture.png" />
+        <div class="about-me-description">
+          <p class="mb-1">
+            I am currently based in Lisbon, Portugal, originally from Brazil. Over the past five years, I have been
+            actively involved in the field of design. I began my career in design agencies, where I honed my skills in
+            various areas such as Visual Identity, Branding, Social Media, Packaging, Printed Materials, and Digital
+            Ads.
+          </p>
+          <p>
+            In recent times, I have focused on UX/UI design, specifically working on the creation of Web Pages and Apps.
+            This experience has allowed me to delve deeper into wireframing, prototyping, user-centered interfaces, and
+            research tools..
+          </p>
+          <img onclick="scrollToInitialSection()" class="header-arrow mt-1" src="./assets/icons/down-arrow.svg"
+            alt="Ícone de uma seta apontando para baixo" />
         </div>
-        <div class="header-about-me-container">
-          <h1>
-            Hello, <span class="font-w-500 italic">I'm</span> <br />
-            Gabriela Tonini
-          </h1>
-          <img class="profile-pic" src="./assets/images/profile-picture.png" />
-          <div class="about-me-description">
-            <p class="mb-1">
-              My work is mainly focused on third-dimension modeling, texturing
-              and rendering. I like exploring the creatures with a touch of dark
-              surrealism for characters and production.
-            </p>
-            <p>
-              Now I'm an interactive media design student in Portugal ⏤
-              currently freelancing and seeking internship opportunities.
-            </p>
-            <img
-              onclick="scrollToInitialSection()"
-              class="header-arrow mt-1"
-              src="./assets/icons/down-arrow.svg"
-              alt="Ícone de uma seta apontando para baixo"
-            />
+      </div>
+    </div>
+  </header>
+
+  <!-- @import components/mobile-menu-->
+
+  <section id="initial-section" class="mb-2 pt-2">
+    <div class="container">
+      <div class="experience-section">
+        <h2>Education</h2>
+        <div class="experience-section-item">
+          <h3>University of Lisbon</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Night time </span>
+            <span class="tag"> In-class </span>
+          </div>
+          <div class="experience-section-item-details">
+            Sep 2022 - PRESENT | Postgraduate Degree
+          </div>
+          <div class="experience-section-item-description">
+            Digital Experience Design
+          </div>
+        </div>
+
+        <div class="experience-section-item">
+          <h3>Fean</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Night time </span>
+            <span class="tag"> In-class </span>
+          </div>
+          <div class="experience-section-item-details">
+            Mar 2018 - Dec 2021 | Bachelor's degree
+          </div>
+          <div class="experience-section-item-description">
+            Digital Experience Design
           </div>
         </div>
       </div>
-    </header>
 
-    <!-- @import components/mobile-menu-->
-
-    <section id="initial-section" class="mb-2 pt-2">
-      <div class="container">
-        <div class="experience-section">
-          <h2>Education</h2>
-          <div class="experience-section-item">
-            <h3>University of Lisbon</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Night time </span>
-              <span class="tag"> In-class </span>
-            </div>
-            <div class="experience-section-item-details">
-              Sep 2022 - PRESENT | Postgraduate Degree
-            </div>
-            <div class="experience-section-item-description">
-              Digital Experience Design
-            </div>
+      <div class="experience-section">
+        <h2>Work Experience</h2>
+        <div class="experience-section-item">
+          <h3>Emotion Films</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Full time </span>
+            <span class="tag"> Hybrid </span>
           </div>
-
-          <div class="experience-section-item">
-            <h3>Fean</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Night time </span>
-              <span class="tag"> In-class </span>
-            </div>
-            <div class="experience-section-item-details">
-              Mar 2018 - Dec 2021 | Bachelor's degree
-            </div>
-            <div class="experience-section-item-description">
-              Digital Experience Design
-            </div>
+          <div class="experience-section-item-details">
+            Mar 2023 - Present · 2 mos
+          </div>
+          <div class="experience-section-item-description">
+            Graphic Designer
           </div>
         </div>
 
-        <div class="experience-section">
-          <h2>Work Experience</h2>
-          <div class="experience-section-item">
-            <h3>Emotion Films</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Full time </span>
-              <span class="tag"> Hybrid </span>
-            </div>
-            <div class="experience-section-item-details">
-              Mar 2023 - Present · 2 mos
-            </div>
-            <div class="experience-section-item-description">
-              Graphic Designer
-            </div>
+        <div class="experience-section-item">
+          <h3>D/Araújo</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Full time </span>
+            <span class="tag"> Hybrid </span>
           </div>
-
-          <div class="experience-section-item">
-            <h3>D/Araújo</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Full time </span>
-              <span class="tag"> Hybrid </span>
-            </div>
-            <div class="experience-section-item-details">
-              Apr 2022 - Jul 2022 · 4 mos
-            </div>
-            <div class="experience-section-item-description">Art Director</div>
+          <div class="experience-section-item-details">
+            Apr 2022 - Jul 2022 · 4 mos
           </div>
+          <div class="experience-section-item-description">Art Director</div>
+        </div>
 
-          <div class="experience-section-item">
-            <h3>Henry Schein</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Full time </span>
-              <span class="tag"> Remote </span>
-            </div>
-            <div class="experience-section-item-details">
-              Sep 2021 - Mar 2022 · 7 mos
-            </div>
-            <div class="experience-section-item-description">Designer</div>
+        <div class="experience-section-item">
+          <h3>Henry Schein</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Full time </span>
+            <span class="tag"> Remote </span>
           </div>
+          <div class="experience-section-item-details">
+            Sep 2021 - Mar 2022 · 7 mos
+          </div>
+          <div class="experience-section-item-description">Designer</div>
+        </div>
 
-          <div class="experience-section-item">
-            <h3>Pessoalize</h3>
-            <div class="experience-section-item-tags">
-              <span class="tag"> Internship </span>
-              <span class="tag"> Hybrid </span>
-            </div>
-            <div class="experience-section-item-details">
-              Feb 2021 - Jul 2021 · 6 mos
-            </div>
-            <div class="experience-section-item-description">
-              UX/UI Designer
-            </div>
+        <div class="experience-section-item">
+          <h3>Pessoalize</h3>
+          <div class="experience-section-item-tags">
+            <span class="tag"> Internship </span>
+            <span class="tag"> Hybrid </span>
+          </div>
+          <div class="experience-section-item-details">
+            Feb 2021 - Jul 2021 · 6 mos
+          </div>
+          <div class="experience-section-item-description">
+            UX/UI Designer
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- @import components/contact-section-->
+  <!-- @import components/contact-section-->
 
-    <!-- @import components/footer-->
-  </body>
+  <!-- @import components/footer-->
+</body>
+
 </html>
