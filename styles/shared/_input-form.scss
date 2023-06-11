@@ -13,11 +13,7 @@
 
   .input-container {
     display: flex;
-
-    img {
-      width: 1.25rem;
-      object-fit: contain;
-    }
+    align-items: center;
 
     input {
       border: none;
