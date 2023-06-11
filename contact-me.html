@@ -78,61 +78,68 @@
           />
           <span>Contact</span>
         </h2>
-        <div class="responsive-grid-50-50 mt-1 mb-2">
-          <div>
-            <h3 class="contact-title font-w-400">
-              Let's talk <br />
-              about it
-            </h3>
-          </div>
-          <div>
-            <p class="font-w-200">
-              Let's connect and build a meaningful professional relationship.
-              Drop me a line, and let's explore how we can support each other.
-            </p>
-          </div>
-        </div>
-        <form class="contact-form">
-          <div>
-            <div class="text-input-group">
-              <label for="input-email">Email</label>
-              <div class="input-container">
-                <input id="input-email" type="text" placeholder="Your Email" />
-                <img src="assets/icons/mail-icon.png" />
-              </div>
-              <span class="error-message"></span>
+        <div class="section-content">
+          <div class="responsive-grid-50-50 mb-2">
+            <div>
+              <h3 class="contact-title font-w-400">
+                Let's talk <br />
+                about it
+              </h3>
             </div>
+            <div>
+              <p class="font-w-200">
+                Let's connect and build a meaningful professional relationship.
+                Drop me a line, and let's explore how we can support each other.
+              </p>
+            </div>
+          </div>
 
-            <div class="text-input-group">
-              <label for="input-name">Full Name</label>
-              <div class="input-container">
-                <input id="input-name" type="text" placeholder="Your Name" />
-                <img src="assets/icons/user-icon.png" />
+          <form class="contact-form">
+            <div>
+              <div class="text-input-group">
+                <label for="input-email">Email</label>
+                <div class="input-container">
+                  <input
+                    id="input-email"
+                    type="text"
+                    placeholder="Your Email"
+                  />
+                  <img src="assets/icons/mail-icon.png" />
+                </div>
+                <span class="error-message"></span>
               </div>
-              <span class="error-message"></span>
-            </div>
-          </div>
-          <div>
-            <div class="text-input-group">
-              <label for="input-message">Message</label>
-              <div class="textarea-container">
-                <textarea
-                  id="input-message"
-                  rows="6"
-                  placeholder="Enter your message"
-                ></textarea>
+
+              <div class="text-input-group">
+                <label for="input-name">Full Name</label>
+                <div class="input-container">
+                  <input id="input-name" type="text" placeholder="Your Name" />
+                  <img src="assets/icons/user-icon.png" />
+                </div>
+                <span class="error-message"></span>
               </div>
-              <span class="error-message"></span>
             </div>
-            <button
-              onclick="sendMessage()"
-              class="primary-button"
-              type="button"
-            >
-              Send Message
-            </button>
-          </div>
-        </form>
+            <div>
+              <div class="text-input-group">
+                <label for="input-message">Message</label>
+                <div class="textarea-container">
+                  <textarea
+                    id="input-message"
+                    rows="6"
+                    placeholder="Enter your message"
+                  ></textarea>
+                </div>
+                <span class="error-message"></span>
+              </div>
+              <button
+                onclick="sendMessage()"
+                class="primary-button"
+                type="button"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
